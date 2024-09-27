@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_938bdabb866c72ad9ecaf272feff2714 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_938bdabb866c72ad9ecaf272feff2714" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_938bdabb866c72ad9ecaf272feff2714 = L.map(
+                "map_938bdabb866c72ad9ecaf272feff2714",
+                {
+                    center: [52.52, 13.405],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8f627b092a895ea1d629907fffc6062f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8f627b092a895ea1d629907fffc6062f.addTo(map_938bdabb866c72ad9ecaf272feff2714);
+        
+    
+            var marker_dfb4da1519ed2673dff0379bf0b9884a = L.marker(
+                [52.509644, 13.368413],
+                {}
+            ).addTo(map_938bdabb866c72ad9ecaf272feff2714);
+        
+    
+            var icon_3958ce8108667940c38398b14b11eb75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_dfb4da1519ed2673dff0379bf0b9884a.setIcon(icon_3958ce8108667940c38398b14b11eb75);
+        
+    
+        var popup_464a3cff733af6cc5a0a23e58463573c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4751c71e374696e0a6a82966536a348 = $(`<div id="html_f4751c71e374696e0a6a82966536a348" style="width: 100.0%; height: 100.0%;">Staatsbibliothek zu Berlin (Potsdamer Straße)</div>`)[0];
+                popup_464a3cff733af6cc5a0a23e58463573c.setContent(html_f4751c71e374696e0a6a82966536a348);
+            
+        
+
+        marker_dfb4da1519ed2673dff0379bf0b9884a.bindPopup(popup_464a3cff733af6cc5a0a23e58463573c)
+        ;
+
+        
+    
+    
+            var marker_fa41737c3153a890d2a5a11e595185e1 = L.marker(
+                [52.517602, 13.391717],
+                {}
+            ).addTo(map_938bdabb866c72ad9ecaf272feff2714);
+        
+    
+            var icon_92c50a4b03113b5b429efe21a9f80ec9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fa41737c3153a890d2a5a11e595185e1.setIcon(icon_92c50a4b03113b5b429efe21a9f80ec9);
+        
+    
+        var popup_cbad4f362876cdc8129b7b2bc9554fa3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cf842722680c0c06c87037a6b100fbc = $(`<div id="html_4cf842722680c0c06c87037a6b100fbc" style="width: 100.0%; height: 100.0%;">Staatsbibliothek zu Berlin (Unter den Linden)</div>`)[0];
+                popup_cbad4f362876cdc8129b7b2bc9554fa3.setContent(html_4cf842722680c0c06c87037a6b100fbc);
+            
+        
+
+        marker_fa41737c3153a890d2a5a11e595185e1.bindPopup(popup_cbad4f362876cdc8129b7b2bc9554fa3)
+        ;
+
+        
+    
+    
+            var marker_3e9da44b4e18ae76abf5c17a7e582abe = L.marker(
+                [52.496365, 13.393049],
+                {}
+            ).addTo(map_938bdabb866c72ad9ecaf272feff2714);
+        
+    
+            var icon_8c336569c7498f084d2627a5a03bea20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3e9da44b4e18ae76abf5c17a7e582abe.setIcon(icon_8c336569c7498f084d2627a5a03bea20);
+        
+    
+        var popup_24382fd087a4049d66edef0253f2c0a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db9c2395d8ba97127cc97673e51f9eb2 = $(`<div id="html_db9c2395d8ba97127cc97673e51f9eb2" style="width: 100.0%; height: 100.0%;">Amerika-Gedenkbibliothek</div>`)[0];
+                popup_24382fd087a4049d66edef0253f2c0a7.setContent(html_db9c2395d8ba97127cc97673e51f9eb2);
+            
+        
+
+        marker_3e9da44b4e18ae76abf5c17a7e582abe.bindPopup(popup_24382fd087a4049d66edef0253f2c0a7)
+        ;
+
+        
+    
+    
+            var marker_23164707a7e10044e6029e2b68c66adf = L.marker(
+                [52.454768, 13.287458],
+                {}
+            ).addTo(map_938bdabb866c72ad9ecaf272feff2714);
+        
+    
+            var icon_ca296724d0e257718bfd51b0045be213 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_23164707a7e10044e6029e2b68c66adf.setIcon(icon_ca296724d0e257718bfd51b0045be213);
+        
+    
+        var popup_12d07ae0a2cccd6b7f11dfb4ffc4d94d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_604eb3c992214e8d5c959311e425253d = $(`<div id="html_604eb3c992214e8d5c959311e425253d" style="width: 100.0%; height: 100.0%;">Philologische Bibliothek</div>`)[0];
+                popup_12d07ae0a2cccd6b7f11dfb4ffc4d94d.setContent(html_604eb3c992214e8d5c959311e425253d);
+            
+        
+
+        marker_23164707a7e10044e6029e2b68c66adf.bindPopup(popup_12d07ae0a2cccd6b7f11dfb4ffc4d94d)
+        ;
+
+        
+    
+    
+            var marker_f23480612dab2aa83654d6fbcd09955b = L.marker(
+                [52.520301, 13.393508],
+                {}
+            ).addTo(map_938bdabb866c72ad9ecaf272feff2714);
+        
+    
+            var icon_c911bf8afa5ac556d1ed3280a746079f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f23480612dab2aa83654d6fbcd09955b.setIcon(icon_c911bf8afa5ac556d1ed3280a746079f);
+        
+    
+        var popup_d3dcc603eb1ea7e8b59125ff36ae7e43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63ca07e5db3ba851728716eb3a7a12ab = $(`<div id="html_63ca07e5db3ba851728716eb3a7a12ab" style="width: 100.0%; height: 100.0%;">Jacob-und-Wilhelm-Grimm-Zentrum</div>`)[0];
+                popup_d3dcc603eb1ea7e8b59125ff36ae7e43.setContent(html_63ca07e5db3ba851728716eb3a7a12ab);
+            
+        
+
+        marker_f23480612dab2aa83654d6fbcd09955b.bindPopup(popup_d3dcc603eb1ea7e8b59125ff36ae7e43)
+        ;
+
+        
+    
+    
+            var marker_4cda1e6d4c5a79e08af1f14beb6807f1 = L.marker(
+                [52.497121, 13.393412],
+                {}
+            ).addTo(map_938bdabb866c72ad9ecaf272feff2714);
+        
+    
+            var icon_918be3fc55ff49a30bc581f09a6fe5d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4cda1e6d4c5a79e08af1f14beb6807f1.setIcon(icon_918be3fc55ff49a30bc581f09a6fe5d3);
+        
+    
+        var popup_23a3007622d54a94d8d290eea6016e6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74fcc95d0b7f1ec5d8efe3fa1a9689ed = $(`<div id="html_74fcc95d0b7f1ec5d8efe3fa1a9689ed" style="width: 100.0%; height: 100.0%;">Zentral- und Landesbibliothek Berlin</div>`)[0];
+                popup_23a3007622d54a94d8d290eea6016e6e.setContent(html_74fcc95d0b7f1ec5d8efe3fa1a9689ed);
+            
+        
+
+        marker_4cda1e6d4c5a79e08af1f14beb6807f1.bindPopup(popup_23a3007622d54a94d8d290eea6016e6e)
+        ;
+
+        
+    
+    
+            var marker_a922ddc1f62ef08be8e4d14bdb321ccb = L.marker(
+                [52.518623, 13.394324],
+                {}
+            ).addTo(map_938bdabb866c72ad9ecaf272feff2714);
+        
+    
+            var icon_ff62216f5d679775b83d12112cac1863 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a922ddc1f62ef08be8e4d14bdb321ccb.setIcon(icon_ff62216f5d679775b83d12112cac1863);
+        
+    
+        var popup_7d42a2b8976a8ff62e8a067ab27629b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20e5c18793bf9d187dee54f34ef84a63 = $(`<div id="html_20e5c18793bf9d187dee54f34ef84a63" style="width: 100.0%; height: 100.0%;">Humboldt University Library</div>`)[0];
+                popup_7d42a2b8976a8ff62e8a067ab27629b1.setContent(html_20e5c18793bf9d187dee54f34ef84a63);
+            
+        
+
+        marker_a922ddc1f62ef08be8e4d14bdb321ccb.bindPopup(popup_7d42a2b8976a8ff62e8a067ab27629b1)
+        ;
+
+        
+    
+    
+            var marker_6a4781fe4a9be573963df865c404275d = L.marker(
+                [52.514979, 13.469297],
+                {}
+            ).addTo(map_938bdabb866c72ad9ecaf272feff2714);
+        
+    
+            var icon_c7d980ab4defcba8d59622826079445b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6a4781fe4a9be573963df865c404275d.setIcon(icon_c7d980ab4defcba8d59622826079445b);
+        
+    
+        var popup_0daa607afd865134d4c85d4ff5bfab86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9287acb51ddd479b7710037c77a33062 = $(`<div id="html_9287acb51ddd479b7710037c77a33062" style="width: 100.0%; height: 100.0%;">Bezirksbibliothek Frankfurter Allee</div>`)[0];
+                popup_0daa607afd865134d4c85d4ff5bfab86.setContent(html_9287acb51ddd479b7710037c77a33062);
+            
+        
+
+        marker_6a4781fe4a9be573963df865c404275d.bindPopup(popup_0daa607afd865134d4c85d4ff5bfab86)
+        ;
+
+        
+    
+    
+            var marker_adb2baa8a452949d02ed0ea0755d2342 = L.marker(
+                [52.519153, 13.413429],
+                {}
+            ).addTo(map_938bdabb866c72ad9ecaf272feff2714);
+        
+    
+            var icon_db7734dfa64d3b146cd6518190f0a192 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_adb2baa8a452949d02ed0ea0755d2342.setIcon(icon_db7734dfa64d3b146cd6518190f0a192);
+        
+    
+        var popup_8425301d5cf1f7fe128db794e40cef3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c0b962366842a0350c5b079a2342878 = $(`<div id="html_4c0b962366842a0350c5b079a2342878" style="width: 100.0%; height: 100.0%;">Berliner Stadtbibliothek</div>`)[0];
+                popup_8425301d5cf1f7fe128db794e40cef3a.setContent(html_4c0b962366842a0350c5b079a2342878);
+            
+        
+
+        marker_adb2baa8a452949d02ed0ea0755d2342.bindPopup(popup_8425301d5cf1f7fe128db794e40cef3a)
+        ;
+
+        
+    
+    
+            var marker_fe000e5da6c25bff5047f4755a519da5 = L.marker(
+                [52.509786, 13.375365],
+                {}
+            ).addTo(map_938bdabb866c72ad9ecaf272feff2714);
+        
+    
+            var icon_26c4ed3b7a97cef3b792cacd34e2f9a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fe000e5da6c25bff5047f4755a519da5.setIcon(icon_26c4ed3b7a97cef3b792cacd34e2f9a7);
+        
+    
+        var popup_dac8b961e0c492c06e619dc0fd314dfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f30f185126c44a8e5ff952ba2f16b223 = $(`<div id="html_f30f185126c44a8e5ff952ba2f16b223" style="width: 100.0%; height: 100.0%;">Mediathek der Deutschen Kinemathek</div>`)[0];
+                popup_dac8b961e0c492c06e619dc0fd314dfa.setContent(html_f30f185126c44a8e5ff952ba2f16b223);
+            
+        
+
+        marker_fe000e5da6c25bff5047f4755a519da5.bindPopup(popup_dac8b961e0c492c06e619dc0fd314dfa)
+        ;
+
+        
+    
+</script>
+</html>
