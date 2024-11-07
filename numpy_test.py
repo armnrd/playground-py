@@ -1,13 +1,20 @@
-import sys
+import time
 import numpy as np
 
 
 def main():
-    nda = np.array((5, 4, 5, 5, 9), str)
-    print('This is a test', flush=True)
-    print('More test text')
-    print(nda.tolist())
+    a = np.random.random(200000000)
+    b = np.random.random(200000000)
+    tick = time.time()
+    c = np.dot(a, b)
+    tock = time.time()
+    print("Time taken: {} ms".format(1000 * (tock - tick)))
+    a = np.random.randn(3, 3)  # a.shape=(3,3)a.shape=(3,3)
+    b = np.random.randn(2, 1)
+    b = np.random.randn(2, 1)  # b.shape=(2,1)b.shape=(2,1)
 
+    c = a + b
+    print(c)
 
-if '__name__' == '__main__':
+if __name__ == "__main__":
     main()

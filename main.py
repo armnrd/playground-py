@@ -102,4 +102,4 @@ def main_3():
     plt.show()
 
 if __name__ == '__main__':
-    main_3()
+    print("in main")
