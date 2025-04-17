@@ -1,12 +1,13 @@
 import sys
 import requests
+import json
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QScrollArea, QPushButton, QHBoxLayout
 
 # Replace with your Todoist API token
-TODOIST_API_TOKEN = '28cf2230df0b3c30ede7abce417f2a2e234e3b4a'
-TODOIST_API_URL = 'https://api.todoist.com/rest/v2/tasks'
-
+with open("secrets.json", "r") as file:
+    secrets = json.load(file)
+    API_TOKEN = secrets["todoist-token"]
 
 class TodoistApp(QWidget):
     def __init__(self):
@@ -44,12 +45,12 @@ class TodoistApp(QWidget):
 
     def fetch_tasks(self):
         headers = {
-            'Authorization': f'Bearer {TODOIST_API_TOKEN}',
+            'Authorization': f'Bearer {API_TOKEN}',
         }
 
         # Fetch tasks for today (due today)
         params = {'filter': 'today'}
-        response = requests.get(TODOIST_API_URL, headers=headers, params=params)
+        response = requests.get("https://api.todoist.com/rest/v2/tasks", headers=headers, params=params)
 
         if response.status_code == 200:
             tasks = response.json()
